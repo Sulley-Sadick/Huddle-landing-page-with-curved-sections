@@ -572,7 +572,7 @@ form input{
     form{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 2.5rem;
     }
     
     input[type="email"]{
@@ -584,7 +584,6 @@ form input{
     input[type="button"]{
         margin-left: 0;
         margin-bottom: 0;
-        margin-right: 2rem;
         max-width: 30%;
     }
     .community-desc{
@@ -630,9 +629,19 @@ form input{
     .icon{
         left: 5%;
     }
+
+    /* huddle styles */
+    .huddle-desc{
+        margin-right: 16rem;
+    }
+
+    /* letter container */
+    .letter-desc{
+        margin-right: 15rem;
+    }
+        
     
-    
-    footer::before{ top: -29%;}
+    footer::before{ top: -26%;}
     
 }
 
@@ -640,11 +649,22 @@ form input{
 
 
     @media screen and (min-width: 60rem)  and (max-width: 70rem){
-        footer::before{
-            top: -22%;
-        }
-        
+        /* community section */
         .community-desc{
             margin-inline: 10rem;
+        }
+
+        /* huddle styles */
+        .huddle-desc{
+            margin-right: 5rem;
+        }
+        
+        /* letter styles */
+        .letter-desc{
+            margin-right: 5rem;
+        }
+
+        footer::before{
+            top: -22%;
         }
     }
